@@ -1,0 +1,10 @@
+---
+- name: Conditional Playbook
+  hosts: all
+  become: true 
+  become_method: sudo
+  connection: ssh
+  ignore_errors: false
+  tasks:
+    - name: Install on centos 6 only 
+      when: (ansible_facts['distribution'] == "Centos" and ansible_facts['distribution']
