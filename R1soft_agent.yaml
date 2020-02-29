@@ -22,7 +22,7 @@
       ignore_errors: true
 
     - name: Get Key
-      shell: r1soft-setup --get-key http://backup.merv3.com
+      shell: r1soft-setup --get-key http://backup.olgaandolga.com
 
     - name: Start R1soft Agent
       systemd:
